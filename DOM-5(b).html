@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+</head>
+<body>
+    <h1 id="msg">Hello, Students!</h1>
+    <h1 id="msg">Check your Results!</h1>
+    <button onclick="Result()">Result</button>
+    <button onclick="Grade()">Grade</button>
+
+    <script>
+        function Result(){
+            let marks = 0;
+            let Result="";
+            marks=Number(prompt("Enter your marks:"));
+            if(marks>=35){
+                Result="You are Pass!";
+            }else{
+                Result="You are Fail!";
+            }    
+            marks=Result;
+        }
+
+        function Grade(){
+            let marks=Number(prompt("Enter your marks:"));
+            if(marks>=90){
+                marks=" A+";
+            }else if(marks>=80){
+                marks=" A";
+            }else if(marks>=70){
+                marks=" B";
+            }else if(marks>=60){
+                marks=" C";
+            }else if(marks>=35){
+                marks=" D";
+            }else{
+                marks="No Grade!"  
+            }    
+
+            }
