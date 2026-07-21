@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+</head>
+<body>
+    <h1 id="msg">Weather Checker</h1>
+    <button onclick="Temperature()">Check Temperature</button>
+    
+    <script>
+        function Temperature(){
+            let temp ="";
+            temp=Number(prompt("Enter todays Temperature:"));
+            if(temp>30){
+                temp="Its Hot Day";
+            }else{
+                temp="Its Pleasant Weather";
+            }
+            document.getElementById("msg").innerHTML=temp;
+        }
+    </script>
+</body>
